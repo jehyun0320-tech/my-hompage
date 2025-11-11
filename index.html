@@ -2,28 +2,58 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>하성,세아의 홈페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하성 · 세아의 홈페이지</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- 상단 메뉴 -->
   <header>
-    <h1>안녕하세요! 👋</h1>
-    <p>저는 하성세아 아빠에요. 코딩으로 만든 제 첫 홈페이지입니다.</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">홈</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#contact">연락하기</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- 메인 소개 -->
   <main>
-    <img src="profile2.jpg" alt="내 프로필 사진" class="profile-img">
-    <section>
-      <h2>💬 자기소개</h2>
-      <p>우리 아이들이 커가고 있는 모습을 담아 놓고 싶어요.<br>
-      이 페이지는 제가 직접 코딩으로 만든 첫 홈페이지예요!</p>
+    <section class="intro">
+      <img src="profile2.jpg" alt="하성세아 가족사진" class="profile-img">
+      <h1>안녕하시와요! 👋</h1>
+      <p>저는 하성세아 아빠에요.<br>
+      코딩으로 만든 제 첫 번째 홈페이지입니다 😊</p>
     </section>
 
-    <button id="contactBtn">연락하기</button>
+    <!-- 자기소개 -->
+    <section id="about" class="about">
+      <h2>💬 우리 가족 이야기</h2>
+      <p>우리 아이들이 커가는 모습을 담고 싶어요.<br>
+      직접 만든 이 페이지에 추억을 차곡차곡 쌓아갈 거예요 💕</p>
+    </section>
+    <!-- 사진 앨범 슬라이드 -->
+    <section id="album" class="album">
+       <h2>📸 우리 가족 앨범</h2>
+      <div class="slider">
+        <img src="photo1.jpg" alt="하성 사진" class="slide-img">
+        <img src="photo2.jpg" alt="세아 사진" class="slide-img">
+        <img src="photo3.jpg" alt="가족 사진" class="slide-img">
+      </div>
+    </section>
+
+
+    <!-- 연락 -->
+    <section id="contact" class="contact">
+      <h2>📫 연락하기</h2>
+      <button id="contactBtn">연락하기</button>
+    </section>
   </main>
 
+  <!-- 하단 -->
   <footer>
-    <p>© 2025 변남매 홈페이지</p>
+    <p>© 2025 변남매 홈페이지 | Made with 💙 by 하성세아 아빠</p>
   </footer>
 
   <script src="script.js"></script>
